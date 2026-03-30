@@ -1,0 +1,52 @@
+{
+  "name": "seocracka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "tsx src/scripts/run-pipeline.ts analyze",
+    "generate": "tsx src/scripts/run-pipeline.ts generate",
+    "post": "tsx src/scripts/run-pipeline.ts post",
+    "post:schedule": "tsx src/scripts/post-scheduler.ts",
+    "feedback": "tsx src/scripts/run-pipeline.ts feedback",
+    "improve": "tsx src/scripts/run-pipeline.ts improve",
+    "post:playwright": "tsx src/scripts/post-queue.ts",
+    "seo-audit": "tsx src/scripts/seo-audit.ts",
+    "check-staleness": "tsx src/scripts/check-staleness.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.48",
+    "@mendable/firecrawl-js": "^4.18.0",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "ai": "^6.0.141",
+    "dotenv": "^17.3.1",
+    "googleapis": "^171.4.0",
+    "gray-matter": "^4.0.3",
+    "next": "^16.2.1",
+    "next-mdx-remote": "^6.0.0",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "seocracka": "file:",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.58.2",
+    "tsx": "^4.21.0"
+  }
+}

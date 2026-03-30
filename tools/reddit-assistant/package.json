@@ -1,0 +1,16 @@
+{
+  "name": "reddit-karma-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered Reddit comment assistant — drafts helpful comments for target subreddits",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "fetch": "node fetch-posts.js",
+    "draft": "node draft-comments.js",
+    "simulate": "node simulate-post.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "reddit-karma-assistant": "file:"
+  }
+}
