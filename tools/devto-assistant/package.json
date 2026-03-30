@@ -1,0 +1,19 @@
+{
+  "name": "devto-assistant",
+  "version": "1.0.0",
+  "description": "Dev.to API automation and posting management",
+  "main": "post.js",
+  "scripts": {
+    "post": "node post.js",
+    "schedule": "node schedule.js",
+    "queue:view": "node queue-manager.js view",
+    "queue:clear": "node queue-manager.js clear",
+    "test": "node test-config.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  },
+  "keywords": ["dev.to", "automation", "api", "posting"],
+  "author": "Himanshu",
+  "license": "MIT"
+}
